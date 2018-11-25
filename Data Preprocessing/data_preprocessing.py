@@ -12,7 +12,7 @@ Y = dataset.iloc[:,3]
 
 #Taking care of missing data
 from sklearn.impute import SimpleImputer
-imputer = SimpleImputer(missing_values = "NaN", strategy = "mean", axis = 0)
+imputer = SimpleImputer(missing_values = "NaN", strategy = "mean")
 imputer = imputer.fit(X[:,1:3])
 X[:,1:3] = imputer.transform(X[:,1:3])
 
