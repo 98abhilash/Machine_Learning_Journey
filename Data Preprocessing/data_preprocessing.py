@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #import dataset 
-dataset = pd.readcsv('Data.csv')
+dataset = pd.read_csv('Data.csv')
 
 #Splitting input and output data
 X = dataset.iloc[:,:-1]
